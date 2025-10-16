@@ -10,7 +10,7 @@ jobs:
       # Устанавливаем Node.js
    - uses: actions/setup-node@v4
       # Ставим зависимости
-   - run: npm install
+   # - run: npm install
       # Запускаем линтер
    - run: make setup
    - run: make start

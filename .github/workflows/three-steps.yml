@@ -12,8 +12,7 @@ jobs:
       # Ставим зависимости
    # - run: npm install
       # Запускаем линтер
-   - run: make setup
-   - run: make start
+   - run: make install
       # Запускаем тесты
       # у шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
@@ -21,3 +20,4 @@ jobs:
      run: make test
    - name: run lint
      run: make lint
+   - uses: hexlet-components/hello-from-hexlet-action@release
